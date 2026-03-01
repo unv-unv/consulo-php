@@ -1,11 +1,11 @@
 package consulo.php.impl.actions;
 
 import consulo.dataContext.DataContext;
-import consulo.ide.IdeView;
 import consulo.ide.action.CreateFileFromTemplateAction;
 import consulo.ide.action.CreateFileFromTemplateDialog;
 import consulo.language.editor.LangDataKeys;
 import consulo.language.editor.PlatformDataKeys;
+import consulo.language.editor.util.IdeView;
 import consulo.language.psi.PsiDirectory;
 import consulo.language.util.ModuleUtilCore;
 import consulo.localize.LocalizeValue;
