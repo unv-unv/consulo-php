@@ -3,9 +3,9 @@ package consulo.php.impl;
 import com.intellij.xml.util.XmlUtil;
 import com.jetbrains.php.lang.PhpFileType;
 import consulo.annotation.component.ExtensionImpl;
-import consulo.xml.psi.xml.XmlFile;
-import consulo.xml.psi.xml.XmlFileNSInfoProvider;
 
+import consulo.xml.language.psi.XmlFile;
+import consulo.xml.language.psi.XmlFileNSInfoProvider;
 import jakarta.annotation.Nonnull;
 import jakarta.annotation.Nullable;
 

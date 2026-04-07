@@ -12,8 +12,8 @@ import consulo.php.impl.lang.documentation.phpdoc.lexer.PhpDocTokenTypes;
 import consulo.php.impl.lang.documentation.phpdoc.psi.PhpDocElementType;
 import consulo.php.lang.lexer.PhpTokenTypes;
 import consulo.php.impl.lang.parser.PhpTokenSets;
-import consulo.xml.psi.xml.XmlTokenType;
 
+import consulo.xml.language.psi.XmlTokenType;
 import jakarta.annotation.Nonnull;
 import java.util.HashMap;
 import java.util.Map;

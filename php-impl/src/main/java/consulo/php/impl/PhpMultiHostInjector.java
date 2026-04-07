@@ -7,10 +7,10 @@ import consulo.language.inject.MultiHostInjector;
 import consulo.language.inject.MultiHostRegistrar;
 import consulo.language.psi.PsiElement;
 import consulo.language.psi.PsiLanguageInjectionHost;
-import consulo.xml.psi.xml.XmlTag;
-import consulo.xml.psi.xml.XmlTagValue;
-import consulo.xml.psi.xml.XmlText;
 
+import consulo.xml.language.psi.XmlTag;
+import consulo.xml.language.psi.XmlTagValue;
+import consulo.xml.language.psi.XmlText;
 import jakarta.annotation.Nonnull;
 
 /**
