@@ -20,7 +20,7 @@
 
     <parent>
         <groupId>consulo</groupId>
-        <artifactId>arch.managment</artifactId>
+        <artifactId>arch.ide-api-provided</artifactId>
         <version>3-SNAPSHOT</version>
         <relativePath/>
     </parent>
@@ -37,15 +37,16 @@
     </repositories>
 
     <groupId>consulo.plugin</groupId>
-    <artifactId>consulo.php.parent</artifactId>
+    <artifactId>consulo.php-xdebug.impl</artifactId>
     <version>3-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
-    <modules>
-        <module>php-api</module>
-        <module>php-impl</module>
-        <module>php-xdebug-impl</module>
-        <module>composer-impl</module>
-        <module>stubs-generator</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>consulo.php-php.api</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>

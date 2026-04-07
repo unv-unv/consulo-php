@@ -4,6 +4,7 @@
  */
 open module consulo.php {
     requires consulo.php.api;
+    requires consulo.php.xdebug.impl;
 
     requires org.apache.commons.compress;
 
@@ -67,6 +68,7 @@ open module consulo.php {
     exports consulo.php.impl.module;
     exports consulo.php.impl.module.packageSupport;
     exports consulo.php.impl.refactoring;
+    exports consulo.php.impl.run.debug;
     exports consulo.php.impl.run.script;
     exports consulo.php.impl.vfs;
     exports org.eclipse.php.internal.core.phar;
