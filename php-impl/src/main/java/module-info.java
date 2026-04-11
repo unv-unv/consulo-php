@@ -8,6 +8,8 @@ open module consulo.php {
 
     requires org.apache.commons.compress;
 
+    requires com.intellij.xml.api;
+    requires com.intellij.xml.html.api;
     requires com.intellij.xml;
 
     // TODO remove this dependency in future

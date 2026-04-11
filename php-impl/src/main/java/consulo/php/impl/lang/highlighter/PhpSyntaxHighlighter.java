@@ -2,6 +2,7 @@ package consulo.php.impl.lang.highlighter;
 
 import com.jetbrains.php.lang.PhpLanguage;
 import consulo.colorScheme.EditorColorsScheme;
+import consulo.html.language.HtmlFileType;
 import consulo.language.editor.highlight.LayerDescriptor;
 import consulo.language.editor.highlight.LayeredLexerEditorHighlighter;
 import consulo.language.editor.highlight.SyntaxHighlighterFactory;
@@ -9,7 +10,6 @@ import consulo.language.version.LanguageVersionResolver;
 import consulo.php.lang.lexer.PhpTokenTypes;
 import consulo.project.Project;
 import consulo.virtualFileSystem.VirtualFile;
-import consulo.xml.ide.highlighter.HtmlFileType;
 
 import jakarta.annotation.Nonnull;
 import jakarta.annotation.Nullable;

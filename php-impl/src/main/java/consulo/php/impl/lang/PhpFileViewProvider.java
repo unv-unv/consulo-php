@@ -1,6 +1,7 @@
 package consulo.php.impl.lang;
 
 import com.jetbrains.php.lang.PhpLanguage;
+import consulo.html.language.HTMLLanguage;
 import consulo.language.Language;
 import consulo.language.impl.file.MultiplePsiFilesPerDocumentFileViewProvider;
 import consulo.language.impl.psi.PsiFileImpl;
@@ -12,7 +13,6 @@ import consulo.language.template.TemplateLanguageFileViewProvider;
 import consulo.php.lang.lexer.PhpTokenTypes;
 import consulo.php.impl.lang.parser.PhpElementTypes;
 import consulo.virtualFileSystem.VirtualFile;
-import consulo.xml.lang.html.HTMLLanguage;
 
 import jakarta.annotation.Nonnull;
 import jakarta.annotation.Nullable;
@@ -27,7 +27,7 @@ import java.util.Set;
  */
 public class PhpFileViewProvider extends MultiplePsiFilesPerDocumentFileViewProvider implements TemplateLanguageFileViewProvider
 {
-	private static final Set<Language> ourRelevantLanguages = new HashSet<Language>(Arrays.asList(HTMLLanguage.INSTANCE, PhpLanguage.INSTANCE));
+	private static final Set<Language> ourRelevantLanguages = Set.of(HTMLLanguage.INSTANCE, PhpLanguage.INSTANCE);
 
 	public PhpFileViewProvider(PsiManager manager, VirtualFile file, boolean physical)
 	{
