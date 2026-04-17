@@ -6,6 +6,44 @@ open module consulo.php {
     requires consulo.php.api;
     requires consulo.php.xdebug.impl;
 
+    requires consulo.ide.api;
+    requires consulo.ide.impl;
+
+    requires consulo.language.impl;
+    requires consulo.language.editor.api;
+    requires consulo.language.editor.impl;
+    requires consulo.language.editor.ui.api;
+    requires consulo.language.editor.refactoring.api;
+    requires consulo.language.inject.impl;
+
+    requires consulo.code.editor.api;
+    requires consulo.color.scheme.api;
+    requires consulo.configurable.api;
+    requires consulo.datacontext.api;
+    requires consulo.disposer.api;
+    requires consulo.document.api;
+    requires consulo.file.editor.api;
+    requires consulo.file.chooser.api;
+    requires consulo.file.template.api;
+
+    requires consulo.execution.api;
+    requires consulo.execution.impl;
+    requires consulo.execution.debug.api;
+
+    requires consulo.compiler.api;
+
+    requires consulo.module.api;
+    requires consulo.module.content.api;
+    requires consulo.module.ui.api;
+
+    requires consulo.project.api;
+    requires consulo.project.ui.api;
+    requires consulo.project.ui.view.api;
+
+    requires consulo.ui.api;
+    requires consulo.ui.ex.api;
+    requires consulo.ui.ex.awt.api;
+
     requires org.apache.commons.compress;
 
     requires com.intellij.xml.api;

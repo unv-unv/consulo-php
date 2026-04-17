@@ -4,7 +4,23 @@
  */
 module consulo.php.api
 {
-	requires transitive consulo.ide.api;
+	requires transitive consulo.language.api;
+	requires transitive consulo.project.api;
+	requires transitive consulo.module.api;
+	requires transitive consulo.navigation.api;
+	requires transitive consulo.application.content.api;
+	requires transitive consulo.process.api;
+	requires transitive consulo.document.api;
+	requires transitive consulo.ui.api;
+
+	requires consulo.application.api;
+	requires consulo.component.api;
+	requires consulo.container.api;
+	requires consulo.index.io;
+	requires consulo.platform.api;
+	requires consulo.util.collection;
+	requires consulo.util.lang;
+	requires consulo.virtual.file.system.api;
 
 	exports com.jetbrains.php;
 	exports com.jetbrains.php.codeInsight;
