@@ -1,7 +1,5 @@
 package net.jay.plugins.php.testCases;
 
-import consulo.ide.impl.idea.openapi.util.io.FileUtil;
-import consulo.util.lang.StringUtil;
 import org.junit.Assert;
 
 import java.io.File;
@@ -10,11 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
- * User: jay
- * Date: 27.02.2007
- *
  * @author jay
+ * @since 2007-02-27
  */
 public abstract class BasePHPFileSetTestCase extends PHPFileSetTestCase
 {
@@ -73,6 +68,4 @@ public abstract class BasePHPFileSetTestCase extends PHPFileSetTestCase
 
 		Assert.assertEquals(result.trim(), transformed.trim());
 	}
-
-
 }
