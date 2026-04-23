@@ -3,6 +3,7 @@ package consulo.php.impl.xdebug;
 import consulo.execution.debug.frame.XCompositeNode;
 import consulo.execution.debug.frame.XValueChildrenList;
 import consulo.execution.debug.frame.XValueGroup;
+import consulo.localize.LocalizeValue;
 import consulo.php.impl.xdebug.connection.DbgpCommandSender;
 import jakarta.annotation.Nonnull;
 import org.w3c.dom.Element;
@@ -15,11 +16,13 @@ public class PhpValueGroup extends XValueGroup {
     private final int myStackLevel;
     private final int myContextId;
 
-    public PhpValueGroup(@Nonnull String name,
-                         @Nonnull DbgpCommandSender commandSender,
-                         @Nonnull List<Element> properties,
-                         int stackLevel,
-                         int contextId) {
+    public PhpValueGroup(
+        @Nonnull LocalizeValue name,
+        @Nonnull DbgpCommandSender commandSender,
+        @Nonnull List<Element> properties,
+        int stackLevel,
+        int contextId
+    ) {
         super(name);
         myCommandSender = commandSender;
         myProperties = properties;
