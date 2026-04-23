@@ -6,6 +6,7 @@ import consulo.execution.debug.evaluation.XDebuggerEvaluator;
 import consulo.execution.debug.frame.XCompositeNode;
 import consulo.execution.debug.frame.XStackFrame;
 import consulo.execution.debug.frame.XValueChildrenList;
+import consulo.localize.LocalizeValue;
 import consulo.logging.Logger;
 import consulo.php.impl.xdebug.connection.DbgpCommandSender;
 import consulo.php.impl.xdebug.connection.DbgpResponse;
@@ -94,7 +95,13 @@ public class PhpStackFrame extends XStackFrame {
                     }
                 }
                 else if (!properties.isEmpty()) {
-                    children.addTopGroup(new PhpValueGroup(contextName, myCommandSender, properties, myLevel, contextId));
+                    children.addTopGroup(new PhpValueGroup(
+                        LocalizeValue.of(contextName),
+                        myCommandSender,
+                        properties,
+                        myLevel,
+                        contextId
+                    ));
                 }
             }
 
